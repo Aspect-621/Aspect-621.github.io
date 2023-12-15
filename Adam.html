@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My portfolio</title>
+    <style>
+        .image1 {
+            width: 1947px;
+            height: 500px;
+            animation: fadeIn 3.5s ease-in-out;
+
+        }
+        .image2 {
+            animation: fadeIn 3.5s ease-in-out;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            background-color: rgb(248, 203, 116);
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <table>
+            <tr>
+                <td><img src="assets/img/Website (5).png" class="image1" /></td>
+            </tr>
+            <tr>
+                <td><img src="assets/img/Website (2).png" class="image1" /></td>
+            </tr>
+
+            <tr>
+                <td><img src="assets/img/Website (3).png" class="image2" /><img src="assets/img/Website (4).jpg" class="image2" /></td>
+                <td></td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        // Add JavaScript to trigger the fade-in effect after the page has loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            var images = document.querySelectorAll('.image1');
+            images.forEach(function (image) {
+                image.style.opacity = 1;
+            });
+        });
+    </script>
+</body>
+
+</html>
